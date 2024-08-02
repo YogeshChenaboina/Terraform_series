@@ -2,6 +2,9 @@ resource "aws_instance" "my_instance" {
   ami = var.ami-name
   instance_type = var.instance-type
   key_name = var.key-name
+  tags = {
+    Name ="Terraform_Instance"
+  }
 }
 
 resource "aws_s3_bucket" "s3_bucket" {
