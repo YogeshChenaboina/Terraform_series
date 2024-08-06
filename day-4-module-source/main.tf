@@ -5,3 +5,5 @@ module "dev" {
   ami_name = "ami-068e0f1a600cd311c"
   tags = "my-instance"
 }
+
+
