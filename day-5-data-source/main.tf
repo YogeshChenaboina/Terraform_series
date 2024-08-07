@@ -29,7 +29,6 @@ data "aws_ami" "amzlinux" {
   }
 }
 
-
 resource "aws_instance" "test" {
     ami = data.aws_ami.amzlinux.id
     instance_type = "t2.micro"

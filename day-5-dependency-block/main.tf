@@ -12,7 +12,6 @@ depends_on = [ aws_s3_bucket.s3_bucket ]
 //Creation of the s3 bucket
 resource "aws_s3_bucket" "s3_bucket" {
   bucket = "yogbunnewbuc"
-  
 }
 
 
